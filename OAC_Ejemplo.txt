@@ -1,1 +1,12 @@
+sudo apt-get update
+sudo apt-get install nasm
+
+!sudo apt-get install nasm 
+!sudo nasm -v 
+!mkdir ejemplo 
+%cd /content/ejemplo/ 
+!touch ejemplo.asm 
+!nasm -f elf ejemplo.asm 
+!ld -m elf_i386 -s -o ejemplo ejemplo.o 
+!./ejemplo 
 
